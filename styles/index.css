@@ -43,3 +43,15 @@ article {
 #intro_info {
     padding: 1.2rem;
 }
+
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column-reverse;
+    }
+
+    #img_1 {
+        height: 250px;
+        width: auto;
+    }
+}

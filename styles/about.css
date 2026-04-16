@@ -25,3 +25,15 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    #ourFounder {
+        flex-direction: column-reverse;
+    }
+
+    #founderImg {
+        height: 250px;
+        width: 180px;
+        margin: auto;
+    }
+}
