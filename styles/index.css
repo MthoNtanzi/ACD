@@ -1,0 +1,45 @@
+.hero {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+    margin-block: 1.1rem;
+}
+
+.btn {
+    height: 50px;
+    border: 1px solid #FFD700;
+    outline: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+
+    padding: 0.7rem 1.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    color: #FFD700;
+    border: 1px #000000;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+#img_1 {
+    height: 500px;
+    width: auto;
+}
+
+#intro_info {
+    padding: 1.2rem;
+}

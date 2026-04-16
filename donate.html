@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/donate.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo_donateBtn">
+            <a href="index.html"><img class="logoImg" src="assets/logo.jpeg" alt="logo image"></a>
+            <button onclick="location.href='donate.html'" class="donateBtn">Donate</button>
+        </div>
+        <ul>
+            <li><a class="navLinks" href="index.html">Home</a></li>
+            <li><a class="navLinks" href="about.html">About Us</a></li>
+            <li><a class="navLinks" href="sponsors.html">Our Sponsors</a></li>
+            <li><a class="navLinks" href="donate.html">Get Involved</a></li>
+            <li><a class="navLinks" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Support Our Cause</h2>
+            <form id="donationForm">
+                <input type="text" placeholder="Full Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="number" placeholder="Amount (ZAR)" required />
+                <select name="donation" id="donation">
+                    <option value="">Make this donation</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quartely">Quartely</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> Ashdown Community Development
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

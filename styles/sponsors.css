@@ -1,0 +1,84 @@
+.cards {
+    margin-block: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 🔹 Background layer */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px) brightness(0.6);
+    transform: scale(1);
+    /* prevents blur edges */
+    z-index: 0;
+}
+
+/* Assign images */
+#afsa::before {
+    background-color: rgb(180, 180, 180);
+    background-image: url('../assets/afsa.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#gbvf::before {
+    background-color: #222;
+    background-image: url('../assets/gbvf.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 🔹 Content layer */
+.card-content {
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem;
+    backdrop-filter: blur(2px);
+    /* subtle glass effect */
+}
+
+/* Text styling */
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* 🔹 Styled link button */
+.card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: 0.3s ease;
+}
+
+.card a:hover {
+    background: #c2185b;
+    transform: translateY(-2px);
+}

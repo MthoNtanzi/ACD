@@ -1,0 +1,27 @@
+#ourFounder {
+    display: flex;
+    gap: 1rem;
+    background: #f4f4f4;
+}
+
+#founderImg {
+    height: 500px;
+    width: auto;
+}
+
+#founder_info {
+    padding: 1rem;
+}
+
+#services {
+    h3 {
+        padding-bottom: 1rem;
+    }
+
+    ul {
+        margin-left: 2rem;
+        margin-bottom: 1.4rem;
+        list-style-type: disc;
+    }
+
+}

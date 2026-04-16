@@ -1,0 +1,32 @@
+main {
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input {
+    padding: 0.3rem;
+}
+
+form button {
+    width: 40%;
+    align-self: center;
+    padding: 0.6rem;
+    font-size: large;
+
+    border: 1px solid #FFD700;
+    outline: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+
+}
+
+#monthly_contribute {
+    margin-right: 0.2rem;
+}
