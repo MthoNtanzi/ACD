@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/contact.css">
 
@@ -28,12 +28,35 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Contact Us</h2>
+        <section id="servicesAndForm">
+            <div id="services">
+                <h1 class="headingText">Get in Touch</h1>
+                <p class="headingText">We are so excited to connect with you on this warrior journey to support
+                    survivors
+                    of
+                    GBV.</p>
+                <h2 id="servicesListHeading">Services we offer</h2>
+                <ul class="servicesList">
+                    <li>Trauma counselling and emotional support</li>
+                    <li>Crisis intervention</li>
+                    <li>GBV (Gender-Based Violence) response services</li>
+                    <li>Referral to healthcare, legal, and social services</li>
+                    <li>Survivor support programmes</li>
+                </ul>
+
+            </div>
             <form>
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Message" rows="5"></textarea>
+                <h2>Please fill the form and we will contact you</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" required />
+                <label for="subject">Subject</label>
+                <input type="subject" placeholder="071 123 4567" id="Enter subject" required />
+                <label for="message">Message</label>
+                <textarea rows="4" id="message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>

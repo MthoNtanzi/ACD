@@ -2,14 +2,67 @@ main {
     background-color: #f4f4f4;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.headingText {
+    font-size: 1.8rem;
+}
+
+#servicesAndForm {
+    padding-block: 2rem;
+    border-top: 1px solid #808080;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-input {
-    padding: 0.3rem;
+#services {
+    width: 80%;
+}
+
+#servicesListHeading {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.servicesList {
+    list-style-image: url("../assets/arrow.png");
+    font-size: 1.5rem;
+
+    li {
+        margin-left: 1.5rem;
+        padding-bottom: 1.2rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #732982;
+    color: #fff;
+
+    label {
+        font-size: 24px;
+        margin-bottom: 0.4rem;
+    }
+
+    box-shadow: -7px 5px 17px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -7px 5px 17px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -7px 5px 17px 2px rgba(0, 0, 0, 0.75);
+}
+
+input,
+textarea {
+    font-size: 22px;
+    padding: 10px;
+    margin-bottom: 2rem;
+
+    border-radius: 45px;
+    border: 1px solid #808080;
+}
+
+textarea {
+    border-radius: 30px;
 }
 
 form button {
