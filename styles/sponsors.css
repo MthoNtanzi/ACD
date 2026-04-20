@@ -1,3 +1,17 @@
+.becomePartner {
+    display: grid;
+}
+
+
+.partnerBenefitsList {
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+
+    li::marker {
+        color: #5e5e5e;
+    }
+}
+
 .cards {
     margin-block: 1.5rem;
     display: flex;

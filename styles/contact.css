@@ -36,13 +36,13 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 20px;
     background-color: #732982;
     color: #fff;
 
     label {
-        font-size: 24px;
+        font-size: 18px;
         margin-bottom: 0.4rem;
     }
 
@@ -53,12 +53,14 @@ form {
 
 input,
 textarea {
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px;
     margin-bottom: 2rem;
+    color: #363636;
 
     border-radius: 45px;
     border: 1px solid #808080;
+    outline: none;
 }
 
 textarea {
@@ -70,12 +72,12 @@ form button {
     align-self: center;
     padding: 0.6rem;
     font-size: large;
+    border-radius: 40px;
 
-    border: 1px solid #FFD700;
+    border: 1px solid #7700ff;
     outline: none;
-    background-color: #000000;
+    background-color: #ff00f2;
     color: #fff;
     font-size: large;
     text-decoration: none;
-
 }
