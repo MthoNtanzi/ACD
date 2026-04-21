@@ -1,98 +1,122 @@
-.becomePartner {
+.becomePartnerSection {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: #f2f2f2;
 }
 
+.bePartner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: larger;
+
+    * {
+        margin-bottom: 1rem;
+    }
+}
+
+.partnerBtn {
+    width: 200px;
+    padding: 0.8rem;
+    font-size: 18px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #e91e63;
+    color: #fff;
+}
+
+.partnerBtn:hover {
+    cursor: pointer;
+
+    box-shadow: 1px 0px 12px 3px #000000bf;
+    -webkit-box-shadow: 1px 0px 12px 3px #000000bf;
+    -moz-box-shadow: 1px 0px 12px 3px #000000bf;
+}
 
 .partnerBenefitsList {
     font-size: 1.2rem;
     margin-left: 1.2rem;
+
+    li {
+        margin-block: 1rem;
+    }
 
     li::marker {
         color: #5e5e5e;
     }
 }
 
+.ourPartnersHeading {
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+}
+
 .cards {
-    margin-block: 1.5rem;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 16px;
-    color: white;
-    width: 100%;
-    max-width: 400px;
-    min-height: 300px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 350px;
+    /* height: 300px; */
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 
-/* 🔹 Background layer */
-.card::before {
-    content: "";
-    position: absolute;
+.modal {
+    display: none;
+    position: fixed;
     inset: 0;
-    background-size: cover;
-    background-position: center;
-    filter: blur(1px) brightness(0.6);
-    transform: scale(1);
-    /* prevents blur edges */
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-/* Assign images */
-#afsa::before {
-    background-color: rgb(180, 180, 180);
-    background-image: url('../assets/afsa.jpeg');
-    background-repeat: no-repeat;
-    background-size: contain;
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#gbvf::before {
-    background-color: #222;
-    background-image: url('../assets/gbvf.jpeg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* 🔹 Content layer */
-.card-content {
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90dvh;
     position: relative;
-    z-index: 1;
-    padding: 1.5rem;
-    backdrop-filter: blur(2px);
-    /* subtle glass effect */
+
+    overflow-y: scroll;
 }
 
-/* Text styling */
-.card h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.card p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
+/* Desktop */
+@media (min-width: 768px) {
+    .becomePartnerSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-/* 🔹 Styled link button */
-.card a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #e91e63;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    transition: 0.3s ease;
-}
-
-.card a:hover {
-    background: #c2185b;
-    transform: translateY(-2px);
+    .cards {
+        justify-content: flex-start;
+    }
 }

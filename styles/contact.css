@@ -10,7 +10,7 @@ main {
     padding-block: 2rem;
     border-top: 1px solid #808080;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
@@ -80,4 +80,14 @@ form button {
     color: #fff;
     font-size: large;
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    #servicesAndForm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        justify-content: flex-start;
+    }
 }

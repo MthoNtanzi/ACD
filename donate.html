@@ -28,10 +28,13 @@
     </nav>
     <main>
         <section>
-            <h2>Support Our Cause</h2>
             <form id="donationForm">
-                <input type="text" placeholder="Full Name" required />
-                <input type="email" placeholder="Email" required />
+                <h2>Support Our Cause</h2>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Full Name" id="name" required />
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" required />
+                <label for="Amount">Amount</label>
                 <input type="number" placeholder="Amount (ZAR)" required />
                 <select name="donation" id="donation">
                     <option value="">Make this donation</option>

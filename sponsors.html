@@ -33,7 +33,7 @@
                 <p class="partnerText">Want to become a sponsor? Help us fight the good fight and help more people in
                     need. Click the button
                     below and join our cause.</p>
-                <button class="partnerBtn">Become a Partner</button>
+                <button class="partnerBtn" onclick="location.href='contact.html'">Become a Partner</button>
             </div>
             <div>
                 <h2 class="partnerBenefitsHeading">Benefits of Being a Partner</h2>
@@ -56,32 +56,101 @@
 
         </section>
         <section>
-            <h2>Meet Our Amazing Partners</h2>
-            <p>We are fortunate to work alongside a diverse and committed group of partners whose support enables us to
+            <h2 class="ourPartnersHeading">Meet Our Amazing Partners</h2>
+            <p class="ourPartnersHeading">We are fortunate to work alongside a diverse and committed group of partners
+                whose support enables us to
                 deliver meaningful development opportunities and drive impact within our communities.</p>
             <div class="cards">
-                <div class="card" id="afsa">
-                    <div class="card-content">
-                        <h3>AIDS Foundation South Africa</h3>
-                        <p>AFSA recognises that the HIV epidemic is rooted in social and relational phenomena...</p>
-                        <a href="https://www.aids.org.za/">Visit Site</a>
-                    </div>
+                <div class="card" id="afsa" data-modal="modal-afsa">
+                    <img src="assets/afsa.jpeg" alt="Aids Foundation South Africa Logo">
                 </div>
-                <div class="card" id="gbvf">
-                    <div class="card-content">
-                        <h3>GBVF Response Fund</h3>
-                        <p>The Gender-Based Violence and Femicide (GBVF) Response Fund was established in response to
-                            South
-                            Africa’s national outcry against GBVF, amplified by the 2018 #TotalShutdown protests and the
-                            2019 Presidential GBVF Summit, which led to the development of the National Strategic Plan
-                            on
-                            GBVF (NSP).</p>
-                        <a href="https://www.gbvfresponsefund1.org/">Visit site</a>
-                    </div>
+                <div class="card" id="gbvf" data-modal="modal-gbvf">
+                    <img src="assets/gbvf.png" alt="Gender-Based Violence and Femicide (GBVF) Response Fund Logo">
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Modals -->
+    <div id="modal-afsa" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>AFSA</h2>
+            <p>AIDS Foundation of South Africa (AFSA)
+                was the first registered AIDS Non-Governmental Organisation in South Africa
+            </p>
+            <p>
+                Focusing on Combination Prevention and Treatment, Child Protection and Wellbeing, Food Security and
+                Income Generation, AFSA aims to deliver quality services to communities most in need. Policy and
+                Practice through the promotion of equality, education and access to basic services is a cornerstone of
+                these efforts.
+            </p>
+            <p>
+                AFSA recognises that the HIV epidemic is rooted in social and relational phenomena conditioned by
+                environmental, cultural, political and socio-economic drivers. Given the complex reality that HIV
+                affects communities and subgroups differently, AFSA uses strategies that address the social and
+                structural drivers of HIV/AIDS and integrates interventions into a broader sexual and reproductive
+                health framework. AFSA focuses on geographies and populations with elevated risk, thereby effectively
+                and efficiently maximizing prevention impact.
+            </p>
+            <p>
+                AFSA’s work is oriented around UNAID’s 95-95-95 global target, which calls for countries to achieve the
+                following by 2030:
+            </p>
+            <ul>
+                <li>95% of all people living with HIV know their status</li>
+                <li>95% Of people within the subpopulation who are living with HIV who know their HIV status are on
+                    antiretroviral therapy</li>
+                <li>
+                    95% Of people within the subpopulation who are on antiretroviral therapy have suppressed viral loads
+                </li>
+            </ul>
+            <p>In order to address the current prevention gap in Eastern and Southern Africa, AFSA’s strategic plan
+                takes the 95-95-95 target into account as it works towards closing the gap in testing, treatment and
+                care</p>
+        </div>
+    </div>
+
+    <div id="modal-gbvf" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>GBVF</h2>
+            <p>
+                The Gender-Based Violence and Femicide (GBVF) Response Fund was established in response to South
+                Africa’s national outcry against GBVF, amplified by the 2018 #TotalShutdown protests and the 2019
+                Presidential GBVF Summit, which led to the development of the National Strategic Plan on GBVF (NSP).
+            </p>
+            <p>
+                As part of a collective national effort, the Presidency partnered with the International Women’s Forum
+                South Africa (IWFSA) to mobilise private sector support. The Fund was established as a strategic
+                vehicle, set up and funded by the private sector, philanthropic, and global development organisations,
+                to drive implementation of the NSP.
+            </p>
+            <p>
+                The Fund exists to mobilise resources, support community-based organisations, strengthen accountability,
+                and enable coordinated, multi-sectoral action to end GBVF in South Africa.
+            </p>
+            <h3>
+                Our Vision
+            </h3>
+            <p>
+                A South Africa free from gender-based violence and femicide directed at women, children and LGBTQIA+
+                persons. We are guided by the National Strategic Plan on GBVF.
+            </p>
+            <h3>
+                Our Identity
+            </h3>
+            <p>
+                The evolved logo brings more colour and a more contemporary visual aesthetic into play. We’ve removed
+                the inner triangular shapes of the old logo to give the icon a rounder, softer and more welcoming feel.
+                The concept of people coming together around the table is now even more evident. By incorporating a
+                rainbow colour scheme, we‘re able to metaphorically reflect the diversity of South Africans who the Fund
+                serves. We’ve also updated the font to reflect or mirror the icon, by rounding the edges and giving it
+                more of a contemporary feel. Altogether, the result is a logo that feels energetic, hopeful, and
+                positive, while evoking a sense of togetherness and inclusivity.
+            </p>
+        </div>
+    </div>
     <footer>
         <p>&copy;
             <script>document.write(new Date().getFullYear());</script> Ashdown Community Development
