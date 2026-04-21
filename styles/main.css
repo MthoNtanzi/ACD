@@ -105,6 +105,14 @@ nav ul {
         display: block;
     }
 
+    section {
+        padding: 0.5rem;
+
+        h2 {
+            padding-bottom: 1rem;
+        }
+    }
+
     /* OPTIONAL: hide donate button on mobile (or keep it) */
     .donateBtn {
         display: none;
