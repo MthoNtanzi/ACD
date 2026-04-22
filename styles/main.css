@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     transition: 1s ease;
+    line-height: 1.6;
 }
 
 body {
@@ -75,6 +76,26 @@ nav ul {
     cursor: pointer;
 }
 
+main {
+    min-height: 75dvh;
+}
+
+section {
+    padding: 2.5rem;
+
+    h2 {
+        padding-bottom: 1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+    font-size: 1.2rem;
+}
+
 /* 🔥 MOBILE STYLES */
 @media (max-width: 768px) {
     #navMenu {
@@ -106,7 +127,7 @@ nav ul {
     }
 
     section {
-        padding: 0.5rem;
+        padding: 1rem;
 
         h2 {
             padding-bottom: 1rem;
@@ -117,26 +138,4 @@ nav ul {
     .donateBtn {
         display: none;
     }
-}
-
-
-
-main {
-    min-height: 75dvh;
-}
-
-section {
-    padding: 2.5rem;
-
-    h2 {
-        padding-bottom: 1rem;
-    }
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #222;
-    color: white;
-    font-size: 1.2rem;
 }

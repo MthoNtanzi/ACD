@@ -1,57 +1,102 @@
 .hero {
     text-align: center;
-    padding: 2.5rem;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(to right, #e91e63, #ff4081);
+    color: white;
 }
 
-.hero h1,
-.hero p,
-.hero .btn {
-    margin-block: 1.1rem;
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.hero h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.hero * {
+    margin: 0.8rem 0;
 }
 
 .btn {
-    height: 50px;
-    border: 1px solid #FFD700;
-    outline: none;
-    background-color: #000000;
-    color: #fff;
-    font-size: large;
-    text-decoration: none;
-
-    padding: 0.7rem 1.5rem;
     display: inline-block;
-    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    background: white;
+    color: #e91e63;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    color: #FFD700;
-    border: 1px #000000;
+    background: #000;
+    color: #fff;
 }
 
 article {
     display: flex;
-    align-items: center;
-    padding: 2rem;
-    background: #f4f4f4;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #f5f5f5;
 }
 
 #img_1 {
-    height: 500px;
-    width: auto;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 #intro_info {
-    padding: 1.2rem;
+    font-size: 1rem;
+}
+
+#whyWeStarted,
+#ourVision {
+    background: #fafafa;
+    margin: 1rem;
+    border-radius: 12px;
+    padding: 1.5rem;
 }
 
 
 @media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
     article {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
     }
 
     #img_1 {
-        height: 250px;
-        width: auto;
+        width: 80%;
+        max-height: 400px;
+    }
+
+    #intro_info {
+        width: 80%;
+    }
+
+    #whyWeStarted,
+    #ourVision {
+        width: 80%;
+        margin: 2rem auto;
     }
 }
