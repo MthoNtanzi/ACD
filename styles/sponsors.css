@@ -56,25 +56,21 @@
 }
 
 .cards {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
 }
 
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+}
 
-    max-width: 220px;
-    /* height: 300px; */
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
+.card img {
+    max-height: clamp(80px, 20vw, 120px);
+    width: auto;
 }
 
 .modal {
